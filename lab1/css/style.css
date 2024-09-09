@@ -1,0 +1,76 @@
+/* Header */
+.header {
+    border: 2px solid rgb(41, 201, 41);
+    width: 80%;
+  }
+  
+  .head_table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 5px;
+    border-left: 2px solid rgb(192, 192, 192);
+    border-right: 2px solid rgb(192, 192, 192);
+  }
+  
+  .head_table td {
+    border-right: 2px solid rgb(192, 192, 192);
+    padding: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: bolder;
+  }
+  
+  .head_table td:last-child {
+    border-right: none;
+  }
+  
+  .head_table a {
+    color: rgb(133, 133, 133);
+    text-decoration: none;
+  }
+  
+  /* Main part */
+  .main_part {
+    border: 1px solid rgb(41, 182, 201);
+    width: 90%;
+  }
+  
+  .plot {
+      padding: 20px;
+  }
+  
+  /* Contact*/
+  .contact {
+    border: 1px solid rgb(201, 41, 41);
+    width: 90%;
+  }
+  
+  .contact_table {
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .contact_table td {
+    font-size: 12px;
+    padding: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-right: 1px solid rgb(133, 133, 133);
+  }
+  
+  .contact_table td:last-child {
+    border-right: none;
+  }
+  
+  .main > div {
+    margin: auto;
+    margin-bottom: 5px;
+    padding: auto;
+  }
+  
+  /* General tag*/
+  h2 {
+    text-align: center;
+    font-weight: 920;
+    color: gray;
+  }
