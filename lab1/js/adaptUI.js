@@ -19,9 +19,9 @@ function setNavPadding() {
     const screenWidth = window.innerWidth;
      
     const sizeWindow = [768, 1800];
-    const bodyMarginBySize = [110, 80];
+    const bodyMarginBySize = [94, 80];
     const paddingBySize = [26, 18];
-    const fontHeaderBySize = [45, 35];
+    const fontHeaderBySize = [28, 24];
     const fontContactBySize = [24, 20]
 
     let count;
