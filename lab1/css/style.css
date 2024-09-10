@@ -1,76 +1,112 @@
 /* Header */
 .header {
-    border: 2px solid rgb(41, 201, 41);
-    width: 80%;
-  }
+  position: fixed;
+  margin: auto;
+  top: 0%;
+  background-color: #a1d6b2;
+  border: 2px solid #a1d6b2;
+  width: 100%;
+  padding: 16px;
+}
+
+.head_table {
+  margin: auto;
+  border-collapse: collapse;
+  margin-bottom: 5px;
+  border-left: 2px solid rgb(247, 247, 247);
+  border-right: 2px solid rgb(247, 247, 247);
+}
+
+.head_table td {
   
-  .head_table {
-    border-collapse: collapse;
-    margin: auto;
-    margin-bottom: 5px;
-    border-left: 2px solid rgb(192, 192, 192);
-    border-right: 2px solid rgb(192, 192, 192);
-  }
-  
-  .head_table td {
-    border-right: 2px solid rgb(192, 192, 192);
-    padding: 0;
-    padding-right: 20px;
-    padding-left: 20px;
-    font-weight: bolder;
-  }
-  
-  .head_table td:last-child {
-    border-right: none;
-  }
-  
-  .head_table a {
-    color: rgb(133, 133, 133);
-    text-decoration: none;
-  }
-  
-  /* Main part */
-  .main_part {
-    border: 1px solid rgb(41, 182, 201);
-    width: 90%;
-  }
-  
-  .plot {
-      padding: 20px;
-  }
-  
-  /* Contact*/
-  .contact {
-    border: 1px solid rgb(201, 41, 41);
-    width: 90%;
-  }
-  
-  .contact_table {
-    margin: auto;
-    padding: 10px;
-  }
-  
-  .contact_table td {
-    font-size: 12px;
-    padding: 5px;
-    padding-top: 0;
-    padding-bottom: 0;
-    border-right: 1px solid rgb(133, 133, 133);
-  }
-  
-  .contact_table td:last-child {
-    border-right: none;
-  }
-  
-  .main > div {
-    margin: auto;
-    margin-bottom: 5px;
-    padding: auto;
-  }
-  
-  /* General tag*/
-  h2 {
-    text-align: center;
-    font-weight: 920;
-    color: gray;
-  }
+  font-size: 20px;
+  border-right: 2px solid rgb(247, 247, 247);
+  padding-right: 30px;
+  padding-left: 30px;
+  font-weight: bolder;
+}
+
+.head_table td:last-child {
+  border-right: none;
+}
+
+.head_table a {
+  color: rgb(247, 247, 247);
+  text-decoration: none;
+}
+
+/* Main part */
+.main_part {
+  background-color: #F1F3C2;
+  padding-bottom: 10px;
+  border: 1px solid #F1F3C2;
+  width: 90%;
+}
+
+.nav {
+  background-color: #cedf9f;
+  padding: 1px;
+}
+
+.plot {
+  margin: auto;
+  width: 90%;
+  border-bottom: 1px solid rgb(133, 133, 133);
+}
+
+#plot::before {
+  content: '';
+  display: block;
+  height: 100px; 
+  margin-top: -100px; 
+}
+
+/* Contact*/
+.contact {
+  border: 1px solid rgb(201, 41, 41);
+  width: 90%;
+}
+
+.contact_table {
+  margin: auto;
+  padding: 10px;
+}
+
+.contact_table td {
+  font-size: 12px;
+  padding: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-right: 1px solid rgb(133, 133, 133);
+}
+
+.contact_table td:last-child {
+  border-right: none;
+}
+
+.main > div {
+  margin: auto;
+  margin-bottom: 5px;
+  padding: auto;
+}
+
+/* General tag*/
+body {
+  padding: 0%;
+  margin: 0%;
+  margin-top: 65px;
+}
+
+@media (min-width: 1000) {
+}
+
+h2 {
+  text-align: center;
+  font-weight: 920;
+  color: rgb(255, 255, 255);
+}
+
+.blockquote{
+  background-color: #E8B86D;
+  padding: 2px;
+}
