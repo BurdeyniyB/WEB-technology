@@ -23,7 +23,7 @@ function setNavPadding() {
     const bodyMarginBySize = [94, 72];
     const paddingBySize = [26, 18];
     const profileByHeight = [260, 200];
-    const fontHeaderBySize = [28, 24];
+    const fontHeaderBySize = [26.2, 22.2];
     const fontContactBySize = [24, 20];
 
     let count;
