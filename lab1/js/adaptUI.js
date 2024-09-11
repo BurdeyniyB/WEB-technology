@@ -16,13 +16,15 @@ function setNavPadding() {
     const header = document.querySelector('.header');
     const header_td = document.querySelectorAll('.head_table td');
     const contact_table = document.querySelectorAll('.contact_table td')
+    const profile_png = document.querySelector('.profile')
     const screenWidth = window.innerWidth;
      
     const sizeWindow = [768, 1800];
-    const bodyMarginBySize = [94, 80];
+    const bodyMarginBySize = [94, 72];
     const paddingBySize = [26, 18];
+    const profileByHeight = [260, 200];
     const fontHeaderBySize = [28, 24];
-    const fontContactBySize = [24, 20]
+    const fontContactBySize = [24, 20];
 
     let count;
 
@@ -33,6 +35,11 @@ function setNavPadding() {
     count = linearInterpolation(screenWidth, sizeWindow, paddingBySize);
     header.style.padding = `${count}px`;
     console.log("header: " + count);
+
+    count = linearInterpolation(screenWidth, sizeWindow, profileByHeight);
+    profile_png.style.width = `${count * 3 / 4}px`;
+    profile_png.style.height = `${count}px`;
+    console.log("profile png: " + count);
 
     count = linearInterpolation(screenWidth, sizeWindow, fontHeaderBySize);
     header_td.forEach(td => {

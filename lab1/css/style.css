@@ -7,10 +7,8 @@
   background-color: #a1d6b2;
   border: 2px solid #a1d6b2;
   display: flex;
-  justify-content: center; /* Центрує вміст по горизонталі */
-
+  justify-content: center; 
 }
-
 
 .head_table {
   padding: 0%;
@@ -22,7 +20,6 @@
 }
 
 .head_table td {
-  
   font-size: 20px;
   border-right: 2px solid rgb(247, 247, 247);
   padding-right: 30px;
@@ -39,6 +36,20 @@
   text-decoration: none;
 }
 
+.blockquote{
+  background-color: #E8B86D;
+  padding: 2px;
+}
+
+.profile {
+  width: 255px;
+  height: 300px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 15px solid white;
+}
+
 /* Main part */
 .main_part {
   background-color: #F1F3C2;
@@ -53,6 +64,14 @@
 }
 
 .plot {
+  padding-bottom: 30px;
+  margin: auto;
+  width: 90%;
+  border-bottom: 1px solid rgb(133, 133, 133);
+}
+
+.movies{
+  padding-bottom: 30px;
   margin: auto;
   width: 90%;
   border-bottom: 1px solid rgb(133, 133, 133);
@@ -95,16 +114,8 @@ body {
   margin-top: 65px;
 }
 
-@media (min-width: 1000) {
-}
-
 h2 {
   text-align: center;
   font-weight: 920;
   color: rgb(255, 255, 255);
-}
-
-.blockquote{
-  background-color: #E8B86D;
-  padding: 2px;
 }
