@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Feedback</title>
+</head>
+<body>
+    <h1>Зворотний зв'язок</h1>
+    <form id="feedbackForm" action="/feedback" method="POST">
+        <textarea name="feedback" rows="5" required></textarea><br>
+        <button type="submit">Відправити відгук</button>
+    </form>
+    <div id="message" style="color: green; margin-top: 10px;"></div>
+    <script src="/js/feedback.js"></script>
+</body>
+</html>
