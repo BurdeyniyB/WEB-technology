@@ -1,32 +1,53 @@
 const express = require('express');
 const path = require('path');
+const multer = require('multer');
 
 const app = express();
+const upload = multer();
 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
+app.use(upload.none()); // Додайте цю стрічку
 
-app.get('/index', (req, res) => res.sendFile(path.join(__dirname, 'views/index.html')))
+app.get('/index', (req, res) => res.sendFile(path.join(__dirname, 'views/index.html')));
 app.get('/login', (req, res) => res.sendFile(path.join(__dirname, 'views/login.html')));
 app.get('/register', (req, res) => res.sendFile(path.join(__dirname, 'views/register.html')));
 app.get('/feedback', (req, res) => res.sendFile(path.join(__dirname, 'views/feedback.html')));
 
-app.post('/register', (req, res) =>{
-    const username = req.body.username;
-    const password = req.body.password;
+app.post('/register', (req, res) => {
+    const {
+        username,
+        password,
+        firstname,
+        lastname,
+        email,
+        years,
+        phone,
+        country,
+        sex,
+        agree
+    } = req.body;
 
-    if (username && password) {
+    if (username && password && firstname && lastname && email && years && phone && country && sex && agree) {
         console.log('Register:');
         console.log('Username:', username);
         console.log('Password:', password);
-        console.log('')
-        res.redirect('/login')
+        console.log('First Name:', firstname);
+        console.log('Last Name:', lastname);
+        console.log('Email:', email);
+        console.log('Years:', years);
+        console.log('Phone:', phone);
+        console.log('Country:', country);
+        console.log('Sex:', sex);
+        console.log('Agreement:', agree);
+        console.log('');
+        res.redirect('/login');
     } else {
-        res.send('Please provide both username and password.');
+        res.send('Please provide all required information.');
     }
 });
 
-app.post('/login', (req, res) =>{
+app.post('/login', (req, res) => {
     const username = req.body.username;
     const password = req.body.password;
 
@@ -34,7 +55,7 @@ app.post('/login', (req, res) =>{
         console.log('Login:');
         console.log('Username:', username);
         console.log('Password:', password);
-        res.redirect('/feedback')
+        res.redirect('/feedback');
     } else {
         res.send('Please provide both username and password.');
     }
