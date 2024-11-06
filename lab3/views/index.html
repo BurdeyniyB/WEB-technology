@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Findtrend</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav class="fixed-nav">
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn"> ☰ </label>
+      <ul class="menu">
+        <li><a class="active" href="#section1">Home</a></li>
+        <li><a href="#section2">About</a></li>
+        <li><a href="#section3">Partners</a></li>
+        <li><a href="#section4">Pricing</a></li>
+        <li><a href="#section5">Subscribe</a></li>
+      </ul>
+    </nav>
+
+    <!-- Section 1: Hero Banner -->
+    <section id="section1" class="section hero">
+      <div class="hero">
+        <h1>Minimize your tabs. Find the trends!</h1>
+        <p>
+          Don’t let your computer memories consumes all of those browser
+          tabs.<br />
+          Findtrend let you gathers all of your favorite website into one place.
+        </p>
+        <button class="button-get-started">Get Started</button>
+      </div>
+      <div class="tabs-preview">
+        <div class="tab">Cryptopunk</div>
+        <div class="tab">Product Design</div>
+        <div class="tab">Popular Design</div>
+        <div class="tab">Elon Musk</div>
+      </div>
+    </section>
+
+    <!-- Section 2: Introduction -->
+    <section id="section2" class="section intro">
+      <h2>Findtrend helps you to increase your productivity</h2>
+      <p>An application that can fulfill your daily browsing needs.</p>
+    </section>
+
+    <!-- Section 3: Partner Logos -->
+    <section id="section3" class="section partners">
+      <h2>Our Partners</h2>
+      <div class="partners-grid">
+        <img src="images/microsoft.png" alt="Microsoft" />
+        <img src="images/Allianz.png" alt="Allianz" />
+        <img src="images/Upwork.png" alt="Upwork" />
+        <img src="images/linkedin.png" alt="Linkedin" />
+      </div>
+    </section>
+
+    <!-- New Section with Icons -->
+    <section id="section6" class="section icon-gallery">
+      <h2>Our Features</h2>
+      <div class="icon-block">
+        <div class="icon-item" onclick="showImage('img1')">
+          <img src="images/icons/facebook.png" alt="Іконка 1" />
+        </div>
+        <div class="icon-item" onclick="showImage('img2')">
+          <img src="images/icons/instagram.jpeg" alt="Іконка 2" />
+        </div>
+        <div class="icon-item" onclick="showImage('img3')">
+          <img src="images/icons/linkedin.jpeg" alt="Іконка 3" />
+        </div>
+        <div class="icon-item" onclick="showImage('img4')">
+          <img src="images/icons/twiter.png" alt="Іконка 4" />
+        </div>
+      </div>
+      <div class="image-display" id="image-display">
+        <img
+          id="img1"
+          src="images/revision/face.png"
+          alt="Feature 1"
+          class="feature-img hidden"
+        />
+        <img
+          id="img2"
+          src="images/revision/insta.png"
+          alt="Feature 2"
+          class="feature-img hidden"
+        />
+        <img
+          id="img3"
+          src="images/revision/link.png"
+          alt="Feature 3"
+          class="feature-img hidden"
+        />
+        <img
+          id="img4"
+          src="images/revision/twiter.png"
+          alt="Feature 4"
+          class="feature-img hidden"
+        />
+      </div>
+      <button>View More Trend</button>
+    </section>
+
+    <!-- Section 4: Pricing -->
+    <section id="section4" class="section pricing">
+      <h2>Get your best deal</h2>
+      <div class="pricing-table">
+        <div class="plan white-bg">
+          <h3>Personal</h3>
+          <hr />
+          <p>Special first packet for all</p>
+          <p class="price">$8/Month</p>
+          <ul class="features">
+            <li>Up to 5 page each group</li>
+            <li>Up to 10 group page</li>
+            <li>5 Days group page saved</li>
+          </ul>
+          <button>Start Free Trial</button>
+        </div>
+        <div class="plan">
+          <h3>Regular</h3>
+          <hr />
+          <p>Recommended for personal pro</p>
+          <p class="price">$20/Month</p>
+          <ul class="features">
+            <li>Up to 15 page each group</li>
+            <li>Download page up to 20 page</li>
+            <li>Up to 10 group page</li>
+            <li>15 Days group page saved</li>
+          </ul>
+          <button>Start Free Trial</button>
+        </div>
+        <div class="plan white-bg">
+          <h3>Premium</h3>
+          <hr />
+          <p>Packet for Startup & Company</p>
+          <p class="price">$48/Month</p>
+          <ul class="features">
+            <li>Unlimited group pages</li>
+            <li>Unlimited download page</li>
+            <li>Unlimited page each group</li>
+            <li>Customize sorting group pages</li>
+            <li>Customize group page name</li>
+            <li>30 Days group page saved</li>
+          </ul>
+          <button>Start Free Trial</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Subscribe -->
+    <section id="section5" class="section subscribe">
+      <h2>Join us on email for more trending topics</h2>
+      <button>Join Now</button>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <p>Findtrends</p>
+      </div>
+      <div class="footer-right">
+        <a href="#private-policy">Private Policy</a>
+        <a href="#terms-conditions">Terms and Conditionals</a>
+        <a href="#contact-us">Contact Us</a>
+        <a href="#careers">Careers</a>
+      </div>
+    </footer>
+    <script src="js/scroll.js"></script>
+    <script src="js/menuBtn.js"></script>
+    <script src="js/icons.js"></script>
+  </body>
+</html>
